@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCDC" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="翻页命令"
+        android:textColor="#404040"
+        android:textSize="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        android:text="1、上一页\n3、下一页\n5、下一步\n7、上一步"
+        android:textColor="#404040"
+        android:textSize="26dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="150dp"
+        android:text="2、第一步\n4、第一页\n6、最后 一步\n8、最后 一页"
+        android:textColor="#404040"
+        android:textSize="26dp" />
+
+    <TextView
+        android:id="@+id/sdk_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:text="讯飞语音识别SDK"
+        android:textColor="#404040"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/asr_btn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@id/sdk_txt"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/begin_btn" />
+
+    <Button
+        android:id="@+id/vadbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/asr_btn"
+        android:text="现场静音检测" />
+
+    <TextView
+        android:id="@+id/asr_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="你想说什么"
+        android:textColor="#404040"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/asrt_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/asr_txt"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/asr_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="#404040"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/asrw_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/asr_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="#404040"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/asrwe_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/asrw_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="#404040"
+        android:textSize="16sp" />
+
+</RelativeLayout>
